@@ -3,4 +3,13 @@
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="br">#2C0C05</color>
+    <color name="ly">#F6C955</color>
+    <color name="lg">#88F96A</color>
+    <color name="lb">#6AF9BB</color>
+    <color name="lp">#F96AA3</color>
+    <color name="lv">#E36AF9</color>
+    <color name="w">#FFF9FB</color>
+    <color name="b">#93E8FD</color>
+
 </resources>

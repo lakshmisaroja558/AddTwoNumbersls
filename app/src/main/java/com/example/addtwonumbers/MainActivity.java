@@ -29,5 +29,54 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        findViewById(R.id.sub).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView num1 = findViewById(R.id.num1);
+                TextView num2 = findViewById(R.id.num2);
+
+                try {
+                    long sub = Long.parseLong(num1.getText().toString()) - Long.parseLong(num2.getText().toString());
+                    TextView resView = findViewById(R.id.res);
+                    resView.setText(sub + "");
+                } catch (NumberFormatException e) {
+                    TextView resView = findViewById(R.id.res);
+                    resView.setText("Number Is To Large");
+                }
+            }
+        });
+        findViewById(R.id.mul).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView num1 = findViewById(R.id.num1);
+                TextView num2 = findViewById(R.id.num2);
+
+                try {
+                    long mul = Long.parseLong(num1.getText().toString()) * Long.parseLong(num2.getText().toString());
+                    TextView resView = findViewById(R.id.res);
+                    resView.setText(mul + "");
+                } catch (NumberFormatException e) {
+                    TextView resView = findViewById(R.id.res);
+                    resView.setText("Number Is To Large");
+                }
+            }
+        });
+        findViewById(R.id.div).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TextView num1 = findViewById(R.id.num1);
+                TextView num2 = findViewById(R.id.num2);
+
+                try {
+                    long sub = Long.parseLong(num1.getText().toString()) / Long.parseLong(num2.getText().toString());
+                    TextView resView = findViewById(R.id.res);
+                    resView.setText(div + "");
+                } catch (NumberFormatException e) {
+                    TextView resView = findViewById(R.id.res);
+                    resView.setText("Number Is To Large");
+                }
+            }
+        });
     }
 }
